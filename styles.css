@@ -18,7 +18,10 @@ h2 {
 }
 
 img { 
-	align: inline;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 }
 
 .content p{
