@@ -24,6 +24,12 @@ img {
 	width: 75%;
 }
 
+#calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .content p{
 	float:left; 
 	width:90%;
