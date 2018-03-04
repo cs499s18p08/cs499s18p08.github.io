@@ -1,7 +1,9 @@
 embed{
 	width:100%;
 	}
-
+#pdf{
+	margin-top: 20px;
+}
 #header {
   	width: 100%;
 	background-color:  #4d94ff;
