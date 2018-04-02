@@ -59,8 +59,20 @@
 	
 		<div>
 		<h3>Update 5 - 3/19/18</h3>
-			This week was rather uneventful because of spring break.  I did some researching into the Amazon Web Services link for our app so that we could actually get the two working in sync together.  I also did more work on getting the camera functionality to work.nec
+			This week was rather uneventful because of spring break.  I did some researching into the Amazon Web Services link for our app so that we could actually get the two working in sync together.  I also did more work on getting the camera functionality to work.
 			While I was away, Nick, Collin, and Malik met with Mike to discuss the app. Mike told them that he wants functionality of the references material pages working first and foremost.  This requires a solid connection with the database so that we can get the data we want shown on the app.
+		</div>
+	
+		<div>
+		<h3>Update 6 - 3/25/18</h3>
+			This week, we focused heavily on the database-mobile connection.  Since we are coming up on the end of the project, we find that we must focus most of our effort towards this.  Malik and Nick focused on researching the functionality, while Collin and I focused more on getting some of the UI working on the mobile end.  
+			During this time, I was able to get one our main display function to work properly for the vehcile data page.  This page calls for a dropdown menu where you select how many vehicles were involved in a crash.  Based on the number selected, the page will automatically populate the information inputs for each vehicle.  One issue in implementing this is that our conditional render does not assign different input values for the text entry/dropdown fields.  So the variables for acquiring the data must be changed to account for this.  It wasn't too difficult, but the text entry fields needed the addition of the iteration value for the condition.  So now, each box will not have the same input value for each vehicle fields.  While the text entry fields had a simple fix, the dropdown menus are a bit different.  Currently, the issue has not been resolved, but I am still looking into a fix.  Since this method of input is used for both the vehicle data and the occupant data, these functions can be added to the other page as well once all issues have been resolved.
+		</div>
+
+		<div>
+		<h3>Update 7 - 4/1/18</h3>
+			This week, we devoted all efforts toward the database integration.  There is an issue where React-Native doesn't have a standard way of accessing a MySQL database on Amazon Web Services.  So we have been looking into work arounds for the issue to prevent having to change the way the database is set up.  There are a few options that we can look into, and our last resort is to move data to another host.  
+			We also made our test cases for the application to make sure that the functionality we have will continue to work.  Finally, we have been looking into how we will push our application to the iOS store, and Google play so that Mike will be able to download the app on his phone.  We are hoping to get the app through their systems within the next couple weeks.
 		</div>
 </body>
 </html>
