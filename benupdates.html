@@ -74,5 +74,18 @@
 			This week, we devoted all efforts toward the database integration.  There is an issue where React-Native doesn't have a standard way of accessing a MySQL database on Amazon Web Services.  So we have been looking into work arounds for the issue to prevent having to change the way the database is set up.  There are a few options that we can look into, and our last resort is to move data to another host.  
 			We also made our test cases for the application to make sure that the functionality we have will continue to work.  Finally, we have been looking into how we will push our application to the iOS store, and Google play so that Mike will be able to download the app on his phone.  We are hoping to get the app through their systems within the next couple weeks.
 		</div>
+	
+		<div>
+		<h3>Update 8- 4/8/18 </h3>
+			This week, we worked on the reference material pages.  These pages consist of a set of pickers that return values from the database on screen for the user based on his picks in the pickers.  We mostly focused on the conditional rendering for each page down so that the picker values would change based on what information was put into the previous picker.  Conditional rendering for these pages consists of various if-else if statements which get the value of the last picker and check what it is.  From there, the logic works through the conditions.  
+			Next, we had to pass this information to the database to grab the values. Malik focused on writing some PHP pages stored on the database which would pull the values and query the database.  We have not yet managed to render the data on the page yet, but we hope to get that done within the next few days.  
+			Nick focused on the speed of impact calculator and the vehicle search page for the reference material page.  The vehicle search page will get values from the user of the type of vehicle, and then print information at the final screen.  This page will be able to display information for cars back from 1936 to the present.
+		</div>
+	
+		<div>
+		<h3>Update 9 - 4/15/18 </h3>
+			This week, we used our time to finish out what was left of the reference material pages.  Collin and I managed to fix the final bugs, and get all the logic for each page to work.  Malik finished the PHP pages, and we were ready to pull data.  At first, we had trouble displaying the values because they were in JSON format.  I had looked around to find a solution but had no luck.  Initially, I had thought to push these final values to another page for display.  When Nick took a look at the code, he realized how to properly format the data and render it.  It turns out it is only a simple text render.  
+			Malik used this time to also add search buttons to send a query to the database.  Once we were sure that the data was being pulled properly, we formatted all the buttons to be uniform, and then formatted the text render for the data.  Next week, we plan to finish ironing any left over bugs, formatting for iOS, and then pushing to Google Play.  We are hoping to push to the App Store for iOS soon.
+		</div>
 </body>
 </html>
