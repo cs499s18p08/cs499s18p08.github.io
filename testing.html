@@ -30,6 +30,7 @@
 	<br>
 	The main goal of this product is to have a mobile app that allows people to have reference material readily avaiable to them through a database provided by our Client.
 	along with that we will allow the user to log in and fill out a lot of information that will be saved to the database. The information they collect will be about the information about the accident they're investigating.
+	Everything besides the reference material pages is not on the lite version of the app, but on the full version.
 	<br>
 	<div>
 	<h3>Unit and Integration Testing</h3>
@@ -43,19 +44,19 @@
 			</ul>
 		<h4>Password Reset</h4>
 			<ul>
-				<li>**Disclaimer: This function will not be implemented it is just the ground work to be added later on**</li>
+				<li>Functionality will not be implemented (Spring 2018)</li>
 				<li>Testing if the text field where you input the email functions correctly</li>
 				<li>Testing if the send email button works properly</li>
 			</ul>
 		<h4>Reset Code Validation</h4>
 			<ul>
-				<li>**Disclaimer: This function will not be implemented it is just the ground work to be added later on**</li>
+				<li>Functionality will not be implemented (Spring 2018)</li>
 				<li>Testing if hte text field where you input the verification code works</li>
 				<li>Testing if the comfirm button works correctly, pressing it will result in a text popping up showing that the buttons input was accepted</li>
 			</ul>
 		<h4>Select a Job</h4>
 			<ul>
-				<li>**Disclaimer: This page isn't working propertly we're having trouble connecting to the database, until that is resolved we will have trouble implementing this page**</li>
+				<li>The functionality of this page will not be implemented (Spring 2018)</li>
 				<li>Clicking a previous job that was added and being able to view the information that was inputted previously. **Not implemented**</li>
 				<li>Clicking add a new job and having it bring up the prompt to fill out the job the information on the job sheet</li>			
 			</ul>
@@ -64,19 +65,19 @@
 				<li>Clicking on the button in the top left that says open will bring up the side navigation menu</li>
 				<li>Clicking on any of the options will bring you to the page</li>
 				<li>Clicking on reference material will bring you to the reference material page</li>
-				<li>Clicking on upload to server will have the data that has been recorded uploaded to the server**Not implemented**</li>
+				<li>Clicking on upload to server will have the data that has been recorded uploaded to the server(The function will not be implemented (Spring 2018))</li>
 				<li>Clicking on settings will bring you to the settings page</li>
 				<li>Clicking on sign out will bring you to the log in screen</li>
 			</ul>
 		<h4>Settings</h4>
 			<ul>
-				<li>**Disclaimer: The setting that we have here are what the client wants in the future. We are not going to be able to implement them within the time that we have left**<li>
+				<li>Functinality for any of the pickers or buttons will not be implemented in (Spring 2018)<li>
 				<li>Clicking on a drop down menu and picking an option for any of the 3 drop down menus and the values being retained for all 3 of them</li>
-				<li>Clicking the clear data button and having getting a response back that the button was pressed</li>
+				<li>Clicking the clear data button makes the button turn opaque.</li>
 			</ul>
 		<h4>Reference Material</h4>
 			<ul>
-				<li>**Disclaimer: The functionality of the database isn't quite working yet so the pages that it's brought to are placeholder**</li>
+				<li>The functionality of storing the values to the datatbase will not be implemented (Spring 2018)</li>
 				<li>Clicking on the vehicle look up button and bring you to the page that has that information on it</li>
 				<li>Clicking on the coefficients of Friction button and bring you to the page that has that information on it</li>
 				<li>Clicking on the default NHTSA car data button and bring you to the page that has that information on it</li>
@@ -86,11 +87,58 @@
 				<li>Clicking on the breaking efficiency button and bring you to the page that has that information on it</li>
 				<li>Clicking on the coefficient of rolling friction button and bring you to the page that has that information on it</li>
 				<li>Clicking on the calculator button and bring you to the page that has that information on it</li>
+				<li>Clicking on the credits button will bring you to the page with the credits information on it</li>
 			</ul>
 		<h4>Vehicle Search</h4>
 			<ul>
-				<li>**Disclaimer: Functionality of this page won't work until we have connection with the database**</li>
-				<li>Checking if the values in the 3 drop down menus hold value</li>
+				<li>Clicking on the year will bring you to a screen where you select the year and selecting the year will bring you back to the original page and will hold the value of year that was chosen</li>
+				<li>After the selection for the year is done you can type in the vehicle make as long its a valid make then you can press search and it will bring you to the next page, otherwise it will tell you to input a correct make</li>
+				<li>When you select a model it will let you choose which type of model and hold the value. Then when you press next it will bring you to the next page to pick the trim</li>
+				<li>When selecting the trim you pick a value from the picker and the value will hold in it. Then when you press get vehicle info it will bring the values that are in the database for what has been inputted and provide the user with information</li>				
+			</ul>
+		<h4>EDR Speed at Impact Calculator</h4>
+			<ul>
+				<li>Hit the switch at the top of the page and it will turn it on and allow the user to input into the slip percentage breaks</li>
+				<li>The values entered into the text boxes hold value when they're inputted</li>
+				<li>After every space is filled up you can press calculate and it will bring you to the calulator results page that will provide the user with a bunch of information about what was calculated</li>
+			</ul>
+		<h4>Coefficient of Friction on Various Roadway Surfaces</h4>
+			<ul>
+				<li>All the values that are chosen in the pickers hold value.</li>
+				<li>When picking a description of the road surface and you have a value in the picker then it will bring up another picker for the quality of the road surface for most of the pickers besides open metal grid</li>
+				<li>When there are values in all the pickers you can press search and it brings a value from the database, otherwise it prompts the users to put inputs into all the pickers</li>
+				<li>For the Non-standard coefficients of friction there are some pickers that you choose that will bring up another prompt that contains the various smaller options for each option</li>
+			</ul>
+		<h4>Default NHTSA Car Data (Stiffness Coefficient)</h4>
+			<ul>
+				<li>The values in the picker will hold when a value is chosen.</li>
+				<li>When a vehicle type is chosen for the picker it will bring up another picker that will contain the class</li>
+				<li>When the class is chosen for the picker it will bring up another picker that will contain the impact area</li>
+				<li>When there are values in all the pickers you can press search and it will bring up values that are stored in the database, otherwise it will prompt the user to fill in the rest of the values</li>
+			</ul>
+		<h4>Pedestrian Walking Speeds/Velocities</h4>
+			<ul>
+				<li>The values in the pickers will hold when a value is chosen. </li>
+				<li>When you choose the description of pedestrian it will bring up another picker to choose the age and choose if they were walking, jogging or running(Although for infants it doesn't bring this up)</li>
+				<li>When there are values in all the pickers you can press search and it will bring up values that are stored in the database, otherwise it will prompt the user to fill in the rest of the values</li>
+			</ul>
+		<h4>Acceleration/Deceleration Rate</h4>
+			<ul>
+				<li>The values in the pickers will hold when a value is chosen. </li>
+				<li>When you choose the vehicle type it will bring up a another picker for you to choose the speed (This will not happen when choosing either of the pedestrian options)</li>
+				<li>When there are values in all the pickers you can press search and it will bring up values that are stored in the database, otherwise it will prompt the user to fill in the rest of the values</li>
+			</ul>
+		<h4>Braking Efficiency</h4>
+			<ul>
+				<li>The values in the pickers will hold when a value is chosen. </li>
+				<li>When choosing the vehicle type it will bring up a another picker for you to choose the breaking style(This will only happen when the value for motorcycle, semi-tractor(bob tail) and passenger cars is chosen</li>
+				<li>When there are values in all the pickers you can press search and it will bring up values that are stored in the database, otherwise it will prompt the user to fill in the rest of the values</li>
+			</ul>
+		<h4>Coefficient of Rolling Friction of Various Roadway Surfaces</h4>
+			<ul>
+				<li>The values in the pickers will hold when a value is chosen. </li>
+				<li>When choosing the description of the road surface after a value is chosen it will bring up another picker for you to choose the quality of the material(This won't happen if the value for pea gravel, sand and mud is chosen)</li>
+				<li>When there are values in all the pickers you can press search and it will bring up values that are stored in the database, otherwise it will prompt the user to fill in the rest of the values</li>
 			</ul>
 		<h4>General Inforation</h4>
 			<ul>
